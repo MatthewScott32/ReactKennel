@@ -3,5 +3,23 @@
         { "id": 1, "name": "Doodles", "breed": "Poodle"},
         { "id": 2, "name": "Decker", "breed": "German Sheperd" },
         { "id": 3, "name": "Esme", "breed": "Pitbull" }
+    ],
+    
+    "owners": [
+        {"name": "Jerry", "phone": "123-456-7890" , "animalId": 1},
+        {"name": "Elaine" , "phone": "098-765-4321" , "animalId": 2},
+        {"name": "Larry" , "phone": "135-792-4680", "animalId": 3}
+    ],
+    
+    "employees": [
+        {"id": 1, "name": "Kramer"},
+        {"id": 2, "name": "George"},
+        {"id": 3, "name": "Newman"}
+    ],
+
+    "locations": [
+        {"id": 1 , "location": "Germantown"},
+        {"id": 2, "location": "The Nations"},
+        {"id": 3, "location": "The Gulch"}
     ]
 }
