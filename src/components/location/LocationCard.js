@@ -9,6 +9,7 @@ class LocationCard extends Component{
               <img src={require('./location.jpg')} alt="Location" />
             </picture>
             <h2>Name: <span className="card-locationname">{this.props.location.name}</span></h2>
+            <button type="button" onClick={() => this.props.deleteLocation(this.props.location.id)}>Close</button>
           </div>
       </div>
     );
