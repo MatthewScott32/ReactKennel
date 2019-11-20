@@ -7,8 +7,8 @@ import LocationCard from "./location/LocationCard"
 import NavBar from "./nav/NavBar"
 import ApplicationViews from "./ApplicationViews"
 
-class Kennel extends Component {
-    render() {
+class Kennel extends Component {        //places navbar and appviews into one class called kennel
+    render() {              //
         return (
          <React.Fragment>
              <NavBar/>
