@@ -1,7 +1,57 @@
 {
-    "animals": [
-        { "id": 1, "name": "Doodles", "breed": "Poodle"},
-        { "id": 2, "name": "Decker", "breed": "German Sheperd" },
-        { "id": 3, "name": "Esme", "breed": "Pitbull" }
-    ]
+  "animals": [
+    {
+      "id": 1,
+      "name": "Steve",
+      "breed": "Great Dane"
+    },
+    {
+      "id": 2,
+      "name": "Decker",
+      "breed": "German Sheperd"
+    },
+    {
+      "id": 3,
+      "name": "Esme",
+      "breed": "Pitbull"
+    }
+  ],
+  "owners": [
+    {
+      "id": 2,
+      "name": "Elaine",
+      "phone": "098-765-4321",
+      "animalId": 2
+    },
+    {
+      "id": 3,
+      "name": "Larry",
+      "phone": "135-792-4680",
+      "animalId": 3
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Kramer"
+    },
+    {
+      "id": 2,
+      "name": "George"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Germantown"
+    },
+    {
+      "id": 2,
+      "name": "The Nations"
+    },
+    {
+      "id": 3,
+      "name": "The Gulch"
+    }
+  ]
 }
