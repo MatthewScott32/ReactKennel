@@ -6,11 +6,11 @@ import * as serviceWorker from './serviceWorker';
 import {BrowserRouter as Router} from "react-router-dom"
 import Kennel from './components/Kennel';
 
-ReactDOM.render(
+ReactDOM.render(            //renders the class("variable") of Kennel which contains the classes Navbar and appviews
 <Router>
     <Kennel />
 </Router>, 
-document.getElementById('root'));
+document.getElementById('root'));       //targets the id root to place the dom render in its place
   
 
 // If you want your app to work offline and load faster, you can change
