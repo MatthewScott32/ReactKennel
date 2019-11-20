@@ -18,6 +18,13 @@
   ],
   "owners": [
     {
+        "id": 1,
+        "name": "Jerry",
+        "phone": "123-456-7890",
+        "animalId": 2
+      },
+    
+    {
       "id": 2,
       "name": "Elaine",
       "phone": "098-765-4321",
@@ -38,6 +45,10 @@
     {
       "id": 2,
       "name": "George"
+    },
+    {
+      "id": 3,
+      "name": "Newman"
     }
   ],
   "locations": [
