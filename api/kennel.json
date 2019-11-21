@@ -18,12 +18,11 @@
   ],
   "owners": [
     {
-        "id": 1,
-        "name": "Jerry",
-        "phone": "123-456-7890",
-        "animalId": 2
-      },
-    
+      "id": 1,
+      "name": "Jerry",
+      "phone": "123-456-7890",
+      "animalId": 2
+    },
     {
       "id": 2,
       "name": "Elaine",
@@ -54,12 +53,12 @@
   "locations": [
     {
       "id": 1,
-      "name": "Germantown"
+      "name": "Germantowmn"
     },
     {
-      "id": 2,
-      "name": "The Nations"
-    },
+        "id": 2,
+        "name": "The Nations"
+      },
     {
       "id": 3,
       "name": "The Gulch"
