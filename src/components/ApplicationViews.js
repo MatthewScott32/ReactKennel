@@ -26,7 +26,7 @@ class ApplicationViews extends Component {
          <Route exact path="/location" render={(props) => {
            return <LocationList />
          }} />
-         <Route path="/location/:locationId(\d+)" render={(props) => {
+         <Route path="/locations/:locationId(\d+)" render={(props) => {
            return <LocationDetail locationId={parseInt(props.match.params.locationId)}/>
          }}/>
          <Route path="/employees" render={(props) => {
