@@ -5,10 +5,10 @@ export default {
     return fetch(`${remoteURL}/owners/${id}`).then(result => result.json())     //fetch for one item
   },
   getAll() {        //fetch for all of the database
-    return fetch(`${remoteURL}/owners?_expand=animal`).then(result => result.json())
+    return fetch(`${remoteURL}/owners?_expand=animal`).then(result => result.json()) //specifies what is returned from getAll
   },
 
-  delete(id) {
+  delete(id) {      //deletes the id and then fetches the new set of data
     return fetch(`http://localhost:5002/owners/${id}`, {
         method: "DELETE"
     })

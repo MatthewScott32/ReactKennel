@@ -34,19 +34,24 @@ deleteLocation = id => {
 
   render(){
     console.log("LocationList: Render");
-  
-    return(
-      <div className="container-cards">
-        {this.state.locations.map(location =>
-          <LocationCard
-            key={location.id}
-            location={location}
-            deleteLocation={this.deleteLocation}
-          />
-        )}
-      </div>
-    )
-  }
-}
+
+   return(
+       <React.Fragment>
+           <section className="section-content">
+               <button type="button" className="btn" onClick={() => {this.props.history.push("/location/new")}}>Open Store</button>
+            </section>
+              <div className="container-cards">
+                {this.state.locations.map(location =>
+                <LocationCard
+                    key={location.id}
+                    location={location}
+                    deleteLocation={this.deleteLocation}
+                />
+                )}
+              </div>
+              </React.Fragment>
+            )
+          }
+        }
 
 export default LocationList
