@@ -1,19 +1,19 @@
 {
   "animals": [
     {
-      "id": 1,
-      "name": "Steve",
-      "breed": "Great Dane"
-    },
-    {
       "id": 2,
-      "name": "Decker",
+      "name": "Petey",
       "breed": "German Sheperd"
     },
     {
       "id": 3,
       "name": "Esme",
       "breed": "Pitbull"
+    },
+    {
+      "name": "Joey",
+      "breed": "chihuahua",
+      "id": 4
     }
   ],
   "owners": [
@@ -39,15 +39,18 @@
   "employees": [
     {
       "id": 1,
-      "name": "Kramer"
+      "name": "Kramer",
+      "title": "Stock-Boy"
     },
     {
       "id": 2,
-      "name": "George"
+      "name": "George",
+      "title": "Bag-Boy"
     },
     {
       "id": 3,
-      "name": "Newman"
+      "name": "Newman",
+      "title": "Mail-Boy"
     }
   ],
   "locations": [
@@ -56,9 +59,9 @@
       "name": "Germantowmn"
     },
     {
-        "id": 2,
-        "name": "The Nations"
-      },
+      "id": 2,
+      "name": "The Nations"
+    },
     {
       "id": 3,
       "name": "The Gulch"
