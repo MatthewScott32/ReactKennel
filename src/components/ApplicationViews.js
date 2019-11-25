@@ -12,6 +12,9 @@ import LocationForm from './location/LocationForm'
 import EmployeeForm from './employee/EmployeeForm'
 import Login from './auth/Login'
 import AnimalEditForm from './animal/AnimalEditForm'
+import EmployeeEditForm from './employee/EmployeeEditForm'
+import LocationEditForm from './location/LocationEditForm'
+import EmployeeWithAnimals from './employee/EmployeeWithAnimals'
 
 class ApplicationViews extends Component {
 
@@ -42,27 +45,44 @@ class ApplicationViews extends Component {
         <Route path="/animals/:animalId(\d+)/edit" render={props => {
           return <AnimalEditForm {...props} />
          }} />
-           <Route exact path="/locations" render={props => {
+           <Route exact path="/location" render={props => {
              if (this.isAuthenticated()) {
                return <LocationList {...props} />
              } else {
                  return <Redirect to="/login" />
              }
            }}/>
-         <Route exact path="/location" render={(props) => {
-           return <LocationList {...props} />
-         }} />
-         <Route path="/location/:locationId(\d+)" render={(props) => {
+         <Route exact path="/locations/:locationId(\d+)" render={(props) => {
            return <LocationDetail locationId={parseInt(props.match.params.locationId)} {...props}/>
          }}/>
          <Route path="/location/new" render={(props) => {
            return <LocationForm {...props} />
          }} />
-         <Route exact path="/employees" render={(props) => {
-          return <EmployeeList {...props} />
-        }} />
+         <Route path="/locations/:locationId(\d+)/edit" render={props => {
+           return <LocationEditForm {...props} />
+         }} />
+         <Route exact path="/employees" render={props => {
+           if (this.isAuthenticated()) {
+             return <EmployeeList {...props} />
+           } else {
+               return <Redirect to="/login" />
+           }
+         }} />
          <Route path="/employee/new" render={(props) => {
            return <EmployeeForm {...props} />
+         }} />
+         <Route path="/employees/:employeeId(\d+)/edit" render={props => {
+           return <EmployeeEditForm {...props} />
+         }} />
+          <Route path="/employees/:employeeId(\d+)/details" render={(props) => {
+           return <EmployeeWithAnimals {...props} />
+         }} />
+         <Route exact path="/owner/new" render={props => {
+           if (this.isAuthenticaded()) {
+             return <OwnerList {...props} />
+           } else {
+               return <Redirect to="/login" />
+           }
          }} />
          <Route path="/owner" render={(props) => {
           return <OwnerList />

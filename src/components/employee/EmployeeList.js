@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 //import the components we will need
 import EmployeeCard from './EmployeeCard'
 import EmployeeManager from '../../modules/EmployeeManager'
+import deleteEmployee from '../../modules/Helpers'
 
 class EmployeeList extends Component {
     //define what this component needs to render
@@ -20,17 +21,6 @@ componentDidMount(){
     })
 }
 
-deleteEmployee = id => {
-    EmployeeManager.delete(id)
-    .then(() => {
-      EmployeeManager.getAll()
-      .then((newEmployees) => {
-        this.setState({
-            employees: newEmployees
-        })
-      })
-    })
-  }
   render(){
     console.log("EmployeeList: Render");
   
@@ -44,7 +34,7 @@ deleteEmployee = id => {
                 <EmployeeCard
                     key={employee.id}
                     employee={employee}
-                    deleteEmployee={this.deleteEmployee}
+                    deleteEmployee={deleteEmployee}
                     {...this.props}
                 />
                 )}

@@ -2,18 +2,36 @@
   "animals": [
     {
       "id": 2,
-      "name": "Petey",
-      "breed": "German Sheperd"
+      "name": "Doodles",
+      "breed": "German Sheperd",
+      "employeeId": 3
     },
     {
       "id": 3,
       "name": "Esme",
-      "breed": "Pitbull"
+      "breed": "Pitbull",
+      "employeeId": 1
     },
     {
-      "name": "Joey",
-      "breed": "chihuahua",
-      "id": 4
+      "name": "Angus",
+      "breed": "Gerbil",
+      "id": 5,
+      "employeeId": 2
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Jessica Younker",
+      "title": "Manager"
+    },
+    {
+      "id": 2,
+      "name": "Jordan Nelson"
+    },
+    {
+      "id": 3,
+      "name": "Zoe LeBlanc"
     }
   ],
   "owners": [
@@ -36,27 +54,10 @@
       "animalId": 3
     }
   ],
-  "employees": [
-    {
-      "id": 1,
-      "name": "Kramer",
-      "title": "Stock-Boy"
-    },
-    {
-      "id": 2,
-      "name": "George",
-      "title": "Bag-Boy"
-    },
-    {
-      "id": 3,
-      "name": "Newman",
-      "title": "Mail-Boy"
-    }
-  ],
   "locations": [
     {
       "id": 1,
-      "name": "Germantowmn"
+      "name": "Germantown"
     },
     {
       "id": 2,
@@ -65,6 +66,10 @@
     {
       "id": 3,
       "name": "The Gulch"
+    },
+    {
+      "name": "East Nashville",
+      "id": 4
     }
   ]
 }

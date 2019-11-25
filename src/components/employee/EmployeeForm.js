@@ -10,7 +10,7 @@ class EmployeeForm extends Component {
     };
 
     handleFieldChange = event => {
-        const stateToChange = []
+        const stateToChange = {};
         stateToChange[event.target.id] = event.target.value;
         this.setState(stateToChange);
     };
@@ -27,7 +27,7 @@ class EmployeeForm extends Component {
             };
 
             EmployeeManager.post(employee)
-            .then(() => this.props.history.push("/employee"));
+            .then(() => this.props.history.push("/employees"));
         }
     };
 
@@ -57,9 +57,9 @@ class EmployeeForm extends Component {
                     </div>
                     <div className="alignRight">
                         <button
-                        tyope="button"
+                        type="button"
                         disabled={this.state.loadingStatus}
-                        onClick={this,this.constructNewEmployee}
+                        onClick={this.constructNewEmployee}
                         >Submit</button>
                     </div>
                 </fieldset>
