@@ -46,6 +46,7 @@ deleteLocation = id => {
                     key={location.id}
                     location={location}
                     deleteLocation={this.deleteLocation}
+                    props={this.props}
                 />
                 )}
               </div>

@@ -5,7 +5,7 @@ import "./EmployeeForm.css"
 class EmployeeEditForm extends Component {
 
     state = {
-        employeename: "",
+        employeeName: "",
         title: "",
         loadingStatus: true,  
     };
