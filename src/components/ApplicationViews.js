@@ -12,6 +12,7 @@ import LocationForm from './location/LocationForm'
 import EmployeeForm from './employee/EmployeeForm'
 import Login from './auth/Login'
 import AnimalEditForm from './animal/AnimalEditForm'
+import EmployeeEditForm from './employee/EmployeeEditForm'
 
 class ApplicationViews extends Component {
 
@@ -58,11 +59,28 @@ class ApplicationViews extends Component {
          <Route path="/location/new" render={(props) => {
            return <LocationForm {...props} />
          }} />
+         <Route exact path="/employess" render={props => {
+           if (this.isAuthenticated()) {
+             return <EmployeeList {...props} />
+           } else {
+               return <Redirect to="/login" />
+           }
+         }} />
          <Route exact path="/employees" render={(props) => {
           return <EmployeeList {...props} />
         }} />
          <Route path="/employee/new" render={(props) => {
            return <EmployeeForm {...props} />
+         }} />
+         <Route path="/employees/:employeeId(\d+)/edit" render={props => {
+           return <EmployeeEditForm {...props} />
+         }} />
+         <Route exact path="/owner/new" render={props => {
+           if (this.isAuthenticaded()) {
+             return <OwnerList {...props} />
+           } else {
+               return <Redirect to="/login" />
+           }
          }} />
          <Route path="/owner" render={(props) => {
           return <OwnerList />
