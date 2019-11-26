@@ -65,6 +65,19 @@ class EmployeeEditForm extends Component {
                            value={this.state.title}
                            />
                            <label htmlFor="title">Title</label>
+
+                           <select
+                            className="form-control"
+                            id="locationId"
+                            value={this.state.locationId}
+                            onChange={this.handleFieldChange}
+                            >
+                            {this.state.locations.map(location =>
+                                <option key={location.id} value={location.id}>
+                                {location.name}
+                                </option>
+                            )}
+                            </select>
                         </div>
                         <div className="alignRight">
                             <button

@@ -12,8 +12,8 @@ class LocationCard extends Component{
             </picture>
             <h2>Name: <span className="card-locationname">{this.props.location.name}</span></h2>
             <button type="button" onClick={() => {this.props.props.history.push(`/locations/${this.props.location.id}/edit`)}}>Edit</button>
-            <button type="button" onClick={() => this.props.deleteLocation(this.props.location.id)}>Close</button>
-            <Link to={`/location/${this.props.location.id}`}><button>Information</button></Link>
+            <button type="button" onClick={() => {this.props.deleteLocation(this.props.location.id)}}>Close</button>
+            <button type="button" onClick={() => { this.props.props.history.push(`/locations/${this.props.location.id}/details`)}}>Information</button>
           </div>
       </div>
     );

@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import LocationManager from "../../modules/LocationManager";
 import "./LocationDetail.css"
+import LocationWithEmployee from "./LocationWithEmployee"
 
 class LocationDetail extends Component {
 
