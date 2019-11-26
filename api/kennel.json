@@ -23,15 +23,20 @@
     {
       "id": 1,
       "name": "Jessica Younker",
-      "title": "Manager"
+      "title": "Manager",
+      "locationId": 1
     },
     {
       "id": 2,
-      "name": "Jordan Nelson"
+      "name": "Jordan Nelson",
+      "title": "Shit-Scraper",
+      "locationId": 2
     },
     {
       "id": 3,
-      "name": "Zoe LeBlanc"
+      "name": "Zoe LeBlanc",
+      "title": "Piss-Mopper",
+      "locationId": 3
     }
   ],
   "owners": [
@@ -66,10 +71,6 @@
     {
       "id": 3,
       "name": "The Gulch"
-    },
-    {
-      "name": "East Nashville",
-      "id": 4
     }
   ]
 }

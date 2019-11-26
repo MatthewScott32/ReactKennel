@@ -64,7 +64,6 @@ class AnimalEditForm extends Component {
               />
               <label htmlFor="animalName">Animal name</label>
 
-
               <input
                 type="text"
                 required
